@@ -1,0 +1,33 @@
+1. **Classes**:
+   - **Position**: Represents a trading position.
+     - Attributes: traderID, asset, leverage, positionSize, entryPrice, marginLevel, status, createdAt
+     - Methods: calculateMarginLevel, calculateEquity, calculateUsedMargin, handleMarginCall, handleLiquidation
+
+   - **LiquidationAuction**: Represents a liquidation auction.
+     - Attributes: position, asset, openingPrice, status, bids, winningBid
+     - Methods: handleAuctionBids, handleAuctionResults, updateAuctionStatus, initiateLiquidationAuction
+
+2. **API Endpoints**:
+   - **POST /auctions/:auctionId/bid**: Endpoint to receive bids for an auction.
+     - Parameters: auctionId, amount, bidder
+     - Method: handleAuctionBids
+
+   - **POST /auctions/:auctionId/finalize**: Endpoint to finalize an auction and determine results.
+     - Parameters: auctionId
+     - Method: handleAuctionResults
+
+3. **Functions**:
+   - **updateAuctionStatus(auctionId, status)**: Updates the auction status in the database.
+   - **updatePositionStatus(positionId, newStatus)**: Updates the position status in the position management system.
+   - **initiateLiquidationAuction(positionId)**: Initiates a new liquidation auction for a specific position.
+
+4. **Database Models**:
+   - **Position Model**: Represents trading positions in the database.
+     - Fields: traderID, asset, leverage, positionSize, entryPrice, marginLevel, status, createdAt
+
+   - **LiquidationAuction Model**: Represents liquidation auctions in the database.
+     - Fields: position, asset, openingPrice, status, bids, winningBid
+
+5. **External Dependencies**:
+   - **MongoDB**: Database for storing position and auction data.
+   - **Redis**: Used for real-time database updates (external price feeds, etc.).
