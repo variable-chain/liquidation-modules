@@ -3,6 +3,15 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const { LiquidationAuction, Position } = require('./models'); // Import the necessary Mongoose models
 
+const databaseURI = 'mongodb://localhost:27017/TestDB';
+
+const mongooseOptions = {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  // useCreateIndex: true,
+  // useFindAndModify: false,
+};
+
 // Set up the Express app
 const app = express();
 app.use(bodyParser.json());
