@@ -13,7 +13,7 @@ const CMC_API_URL = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/listing
 const CMC_API_KEY = '209ff4f0-6260-49ec-9b1d-faa73b98affe';
 
 // Monitored assets
-const MONITORED_ASSETS = ['bitcoin','ethereum'];
+const MONITORED_ASSETS = ['BTC','ethereum'];
 
 // Price fetch interval (3 seconds)
 const FETCH_INTERVAL_MS = 3000;
