@@ -1,0 +1,52 @@
+This workflow assumes we're interacting with a decentralized exchange built on a blockchain platform like Ethereum, Binance Smart Chain, or a similar platform.
+
+**Workflow: Depositing Funds in a Perpetuals DEX**
+
+1. **Access the DEX Platform**:
+   - Begin by accessing the user interface (UI) or frontend of the Perpetuals DEX platform.
+
+2. **Connect Your Wallet**:
+   - Click on the "Connect Wallet" or similar button to initiate the wallet connection process.
+   - Select your preferred wallet provider (e.g., MetaMask, Trust Wallet, Coinbase Wallet).
+   - Approve the connection request, allowing the DEX platform to interact with your wallet.
+
+3. **Wallet Balance Check**:
+   - Once connected, the DEX platform retrieves your wallet's cryptocurrency balance, including supported assets and their amounts.
+
+4. **Select Asset for Deposit**:
+   - Choose the cryptocurrency asset you want to deposit into the Perpetuals DEX. Ensure that the selected asset is supported on the platform.
+
+5. **Deposit Funds**:
+   - Input the amount of the selected asset you wish to deposit into the DEX. Alternatively, you may choose to deposit your entire balance of that asset.
+
+6. **Transaction Confirmation**:
+   - Confirm the deposit transaction on your wallet's interface. This transaction typically includes details such as the deposit amount, gas fees (if applicable), and the DEX's contract address.
+
+7. **Blockchain Confirmation**:
+   - Wait for the blockchain network to confirm your deposit transaction. Depending on the network's congestion, this may take a few seconds to several minutes.
+   - Monitor the transaction status on your wallet to ensure it's successfully mined.
+
+8. **DEX Confirmation**:
+   - Once the deposit transaction is confirmed on the blockchain, the Perpetuals DEX platform updates your account balance to reflect the deposited funds.
+
+9. **Account Verification**:
+   - Verify that the deposited funds are correctly credited to your DEX account.
+   - The platform may display your updated balance in the trading interface.
+
+10. **Ready to Trade**:
+    - With the deposited funds in your DEX account, you are now ready to trade perpetual contracts, futures, or other supported financial instruments on the platform.
+
+11. **Monitor and Manage**:
+    - Keep an eye on your DEX account balance and trading positions.
+    - You can withdraw your funds at any time or execute trades within the platform.
+
+12. **Withdrawal Option**:
+    - If needed, you can initiate a withdrawal request to transfer your funds back to your wallet.
+    - Follow a similar process as depositing but choose the withdrawal option instead.
+
+13. **Logout and Security**:
+    - For security, ensure you log out of the DEX platform when you're done trading or managing your account.
+    - Always follow best practices for securing your wallet and private keys.
+
+14. **Support and Assistance**:
+    - If you encounter any issues during the deposit process or have questions about the platform's features, reach out to the DEX's customer support or community channels for assistance.
