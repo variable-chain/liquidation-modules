@@ -1,0 +1,55 @@
+**Workflow for Profit/Loss Calculation in the Liquidation Engine**:
+
+1. **Input Parameters**:
+   - Gather the necessary input parameters, including the trader's entry price, exit price, position size, leverage, and any funding payments received or paid during the holding period.
+
+2. **Mark Price Retrieval**:
+   - Retrieve the mark price, which serves as a reference price for the trader's position. It's typically obtained from an index or oracle.
+
+3. **Funding Rate Adjustment**:
+   - Adjust the exit price based on the funding rate over the holding period. If the trader received funding payments, add them to the exit price; if they paid funding, subtract it.
+
+4. **Position Size Adjustment**:
+   - Adjust the position size for leverage. Calculate the effective position size based on the trader's leverage.
+
+5. **Unrealized P&L Calculation**:
+   - Calculate the unrealized P&L using the following formula:
+     ```
+     Unrealized P&L = (Mark Price - Entry Price) * Effective Position Size
+     ```
+
+6. **Realized P&L Calculation**:
+   - Calculate the realized P&L using the following formula:
+     ```
+     Realized P&L = (Exit Price - Entry Price) * Effective Position Size
+     ```
+
+7. **Total P&L Calculation**:
+   - Sum the unrealized and realized P&L to obtain the total P&L for the trader's position.
+
+8. **P&L Conversion**:
+   - Convert the P&L from the cryptocurrency used in the trade to the trader's preferred currency, if necessary.
+
+9. **Risk Management**:
+   - Evaluate the trader's P&L in the context of risk management parameters. Assess whether it has reached predefined stop-loss or take-profit levels.
+
+10. **Decision Point**:
+    - At this stage, you may need to make decisions regarding margin calls or other actions based on the trader's P&L and risk exposure.
+
+11. **Logging and Documentation**:
+    - Maintain comprehensive logs of all P&L calculations, adjustments, and decisions made for auditing and reporting purposes.
+
+12. **Reporting**:
+    - Generate reports summarizing the trader's P&L and provide them to the trader for transparency and record-keeping.
+
+13. **Continuous Monitoring**:
+    - Continuously monitor the trader's position and P&L in real-time to react swiftly to changing market conditions.
+
+14. **Fee Deductions**:
+    - Deduct trading fees and funding fees from the trader's P&L, ensuring that the net P&L reflects the actual profit or loss.
+
+15. **Support**:
+    - Provide customer support for traders who have inquiries or issues related to their P&L calculations or positions.
+
+16. **Security Measures**:
+    - Implement stringent security measures to safeguard the accuracy and integrity of P&L calculations and reports.

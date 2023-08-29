@@ -1,0 +1,61 @@
+**Trade Flow Workflow in the Liquidation Engine**:
+
+1. **Order Placement**:
+   - Traders place market or limit orders on the DEX, specifying trade parameters like size and leverage.
+
+2. **Order Matching**:
+   - The DEX's matching engine matches buy and sell orders based on price and quantity, ensuring fair execution.
+
+3. **Margin Calculation**:
+   - Calculate and validate the margin requirements for each trader based on their selected leverage and position size.
+
+4. **Position Opening**:
+   - If the margin requirements are met, open a new position for the trader. This involves recording the entry price, size, and leverage.
+
+5. **Real-time Monitoring**:
+   - Continuously monitor the trader's position, mark price, and funding rates in real-time to assess its profitability and risk exposure.
+
+6. **Funding Rate Adjustment**:
+   - Adjust the position's P&L based on the funding rate. Add or subtract funding payments as they occur.
+
+7. **Risk Management**:
+   - Regularly evaluate traders' positions and their risk exposure. Implement mechanisms like partial liquidation or socialized losses if needed.
+
+8. **Profit/Loss Calculation**:
+   - Calculate the trader's unrealized and realized P&L as described in the previous workflow, excluding regulatory compliance and taxation steps.
+
+9. **Margin Calls**:
+   - Monitor the trader's margin level. If it falls below the required maintenance margin, issue a margin call to prompt additional funding or position closure.
+
+10. **Liquidation Trigger**:
+    - If the trader's margin level deteriorates further and breaches the liquidation threshold, trigger the liquidation process.
+
+11. **Liquidation Auction**:
+    - Initiate a liquidation auction to sell off the trader's position at the current market price to cover their outstanding debt.
+
+12. **Execution of Liquidation**:
+    - Execute the liquidation by matching the trader's position with willing buyers at the market price.
+
+13. **Margin Recovery**:
+    - Use the proceeds from the liquidation auction to cover the trader's debt and recover any remaining margin.
+
+14. **Position Closure**:
+    - Close the trader's position if it's fully liquidated or if they meet the margin requirements.
+
+15. **P&L Calculation**:
+    - Calculate the realized P&L for the liquidated position based on the liquidation price and the trader's entry price.
+
+16. **Reporting**:
+    - Provide traders with reports detailing their trades, liquidations, and P&L. This information is essential for transparency and record-keeping.
+
+17. **Continuous Monitoring**:
+    - Continue monitoring all active positions, P&L, and margin levels to ensure the stability of the DEX.
+
+18. **Error Handling**:
+    - Implement robust error-handling procedures to address any issues that may arise during the trade flow, such as system glitches or network interruptions.
+
+19. **Security Measures**:
+    - Ensure stringent security measures are in place to protect against unauthorized access, fraud, and data breaches.
+
+20. **Support**:
+    - Offer customer support to assist traders with trade-related inquiries and issues.
