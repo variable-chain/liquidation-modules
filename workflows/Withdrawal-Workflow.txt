@@ -1,3 +1,5 @@
+**Workflow for Withdrawal in the Liquidation Engine**:
+
 1. **User Request**:
    - Begin with a user request for withdrawal. This can come through the user interface or an API call.
 
@@ -11,9 +13,9 @@
    - Determine the withdrawal amount specified by the user.
 
 5. **Withdrawal Limits**:
-   - Verify that the withdrawal amount is within predefined withdrawal limits and complies with regulatory/Fee requirements.
+   - Verify that the withdrawal amount is within predefined withdrawal limits and complies with regulatory requirements.
 
-6. **Cold Wallet Authorization**: (NOTE: This should not be applicable for our Exchange, but including this, just for our Internal Reference POV)
+6. **Cold Wallet Authorization**:
    - If the exchange uses cold wallets for security, initiate the authorization process for the withdrawal.
 
 7. **Transaction Creation**:
