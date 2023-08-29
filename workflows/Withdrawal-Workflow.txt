@@ -51,8 +51,5 @@
 17. **Security Measures**:
     - Ensure robust security measures, such as two-factor authentication, withdrawal whitelists, and rate limits, are in place to protect against unauthorized withdrawals.
 
-18. **Regulatory Compliance**:
-    - Ensure compliance with any regulatory requirements related to withdrawals, including anti-money laundering (AML) and know-your-customer (KYC) procedures.
-
-19. **Support**:
+18. **Support**:
     - Provide customer support for users who may have inquiries or issues related to their withdrawals.
