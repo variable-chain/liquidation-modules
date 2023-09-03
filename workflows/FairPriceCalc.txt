@@ -1,10 +1,13 @@
 **Workflow for Fair Price Calculation in the Liquidation Engine**:
 
+Note :- {Put Reference material for the entire process including the Loops for Fair Price Calc, and their processes for novice Traders/Devs}
+
 1. **Input Parameters**:
    - Obtain the input parameters, including the trader's position size, entry price, leverage, funding rate, and market price.
 
 2. **Mark Price Calculation**:
    - Calculate the mark price, which is typically an index price derived from the underlying assets. It's used as a reference price for traders' positions.
+        -Satyam Inputs :- Formula/Rule, Method (as in the process)
 
 3. **Funding Rate Adjustment**:
    - Adjust the mark price based on the funding rate. If it's positive, add it to the mark price; if negative, subtract it.
